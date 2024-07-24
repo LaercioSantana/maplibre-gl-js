@@ -246,7 +246,7 @@ class CrossTileSymbolLayerIndex {
         }
         const zoomCrossTileIDs = this.usedCrossTileIDs[tileID.overscaledZ];
 
-        for (const zoom in this.indexes) {
+        /* for (const zoom in this.indexes) {
             const zoomIndexes = this.indexes[zoom];
             if (Number(zoom) > tileID.overscaledZ) {
                 for (const id in zoomIndexes) {
@@ -262,7 +262,7 @@ class CrossTileSymbolLayerIndex {
                     parentIndex.findMatches(bucket.symbolInstances, tileID, zoomCrossTileIDs);
                 }
             }
-        }
+        } */
 
         for (let i = 0; i < bucket.symbolInstances.length; i++) {
             const symbolInstance = bucket.symbolInstances.get(i);
